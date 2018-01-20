@@ -3,22 +3,53 @@
 <html>
   &lt;head&gt;
     <meta charset="utf-8"/>
-    <title></title>
-    <link rel="stylesheet" href="//cdn.rawgit.com/sainskomputer/blog/afb0e88c/src/master.css" />
+    <b:include data='blog' name='all-head-content'/>
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" />
+    <b:if cond='data:view.isHomepage'>
+      <title><data:blog.title/></title>
+    <b:else/>
+    <b:if cond='data:view.isPost'>
+      <title><data:blog.pageName/></title>
+    <b:else/>
+      <title><data:blog.pageName/></title>
+    </b:if>
+    </b:if>
     <b:skin><![CDATA[/*
-      Name        : Sainskomputer theme 3.2
+      Name        : Sainskomputer Themes 3.2
       Type        : Portal Blogger
       Style       : Minimalist
       Color       : Black
       Designer    : Diaz Septa
-      Published   : 10-03-2017
+      Published   : 20-jan-2018
       License     : GNU Version 3, 29 June 2007
       */]]></b:skin>
   &lt;/head&gt;
+<style media="screen">
+    <!-- master style -->
+
+</style>
+  <b:if cond='data:view.isHomepage'>
+<style media="screen">
+  <!-- condition style homepage -->
+
+</style>
+  </b:if>
+  <b:if cond='data:view.isPost'>
+<style media="screen">
+  <!-- condition style posting -->
+
+</style>
+  </b:if>
+  <b:if cond='data:view.isPage'>
+<style media="screen">
+  <!-- condition style posting -->
+
+</style>
+  </b:if>
   &lt;body&gt;
-    <b:section class='main' id='main' showaddelement='no' />
+    <b:section id='main' class='main' maxwidgets="1" showaddelement="false">
+      <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' visible='true'></b:widget>
+    </b:section>
   &lt;/body&gt;&lt;!--<head/><body/>--&gt;
   <script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="//cdn.rawgit.com/sainskomputer/blog/afb0e88c/src/master.js"></script>
 </html>
