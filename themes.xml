@@ -1,1 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html>
+  &lt;head&gt;
+    <meta charset="utf-8"/>
+    <title></title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" />
+    <b:skin><![CDATA[/*
+      Name        : Sainskomputer theme 3.2
+      Type        : Portal Blogger
+      Style       : Minimalist
+      Color       : Black
+      Designer    : Diaz Septa
+      Published   : 10-03-2017
+      License     : GNU Version 3, 29 June 2007
+      */]]></b:skin>
+  &lt;/head&gt;
+  &lt;body&gt;
+    <b:section class='main' id='main' showaddelement='no' />
+  &lt;/body&gt;&lt;!--<head/><body/>--&gt;
+  <script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</html>
