@@ -1,2 +1,80 @@
 @charset "UTF-8";
 @import "//fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900";
+/* reset */
+body {display: block;margin: 0;font-family: "Montserrat", sans-serif;font-size: 12px;color: #9da5b4;background-color: #1b1d23;}
+input[type="email" i], input[type="password" i], input[type="text" i], button:focus {outline: none;}
+input[type="email" i], input[type="password" i], input[type="text" i], button {
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  border: 0;
+  font-weight: 400;
+  color: #654cbb;
+}
+h1, h2, h3, h4, h5, h6 {margin: 0;}
+ul, menu, dir {margin: 0;padding: 0;}
+li {list-style: none;}
+a {text-decoration: none;color: inherit;}
+p {margin: 0;}
+*{box-sizing:border-box}
+::-webkit-scrollbar {width: 5px;background-color: #282c34;}
+::-webkit-scrollbar-thumb {background-color: #3c424e;}
+
+/* navabar */
+nav {width: 100%;color: #707783;background-color: #181a1f;}
+.nav-container {display: flow-root;margin: 0 auto;padding: 5px 0;max-width: 1024px;}
+.nav-left {display: flex;float: left;justify-content: flex-start;width: 50%;}
+.nav-left a {display: flex;}
+.nav-left img {margin-right: 5px;width: 28px;height: 28px;}
+.nav-left input {margin: 2px 0;padding: 5px 10px;border-radius: 3px;font-size: 11px;font-weight: 600;width: 200px;background-color: #1c1f25;}
+.navabar-icon {display: none;fill: #654cbb;}
+.nav-right {display: flex;float: right;justify-content: flex-end;width: 50%;}
+.nav-right a {display: flex;margin-left: 8px;padding: 5px 0;fill: #707783;transition: 0.2s ease-in;}
+.nav-right a:hover {fill: #654cbb;color: #654cbb;}
+.nav-right i {font-size: 21px;}
+.nav-right p {margin-left: 5px;padding: 1px 0;font-weight: 600;}
+
+/* header */
+header {position: relative;display: flex;align-items: center;justify-content: flex-end;width: 100%;height: 200px;background-color: #1e2027;}
+header::after, header::before {position: absolute;content: "";top: 0;bottom: 0;left: 0;right: 0;z-index: 1;}
+header::after {opacity: 0.5;background: url(../img/coding.jpg) top center;background-attachment: fixed;background-size: cover;background-position: center;}
+.header-container {position: relative;margin: 0 auto;width: 1024px;text-align: right;z-index: 2;}
+.header-container p {margin-bottom: 5px;font-style: italic;font-size: 10px;font-weight: 200;color: #fff;}
+.header-download {display: flex;margin-bottom: 3px;justify-content: flex-end;}
+.header-download button {display: flex;padding: 3px 5px;border-radius: 3px;fill: #654cbb;background-color: #fff;transition: 0.2s ease-in;}
+.header-download button:hover {cursor: pointer;fill: #fff;color: #fff;background-color: #654cbb;}
+.header-download span {margin-left: 5px;padding: 1px 0;font-size: 12px;font-weight: 600;}
+.header-partner {display: flex;justify-content: flex-end;}
+.header-partner a {display: inline-grid;}
+.header-partner img {margin-left: 5px;border-radius: 3px;max-width: 40px;}
+
+/* footer */
+footer {position: absolute;bottom: 0;width: 100%;font-weight: 600;color: #707783;background-color: #181a1f;}
+footer a:hover {color: #654cbb;}
+.footer-container {display: flex;margin: 0 auto;padding: 10px 0;max-width: 1024px;}
+.footer-left {width: 50%;text-align: left;}
+.footer-left a {display: inline-block;margin-right: 10px;padding: 5px 0;transition: 0.2s ease-in;}
+.footer-right {padding: 5px 0;width: 50%;text-align: right;}
+
+/* responsive */
+@media only screen and (max-width: 1024px) {
+  .nav-container {padding: 5px;}
+  .header-container {padding-right: 10px;}
+  .footer-container {padding: 10px;}
+}
+@media only screen and (max-width: 425px) {
+  .nav-left {display: inline-block;float: none;justify-content: center;margin-top: 4px;width: 100%;}
+  .navabar-icon {display: grid;margin: 2px 0;float: right;}
+  .nav-left a {float: left;}
+  .nav-left form {float: left;}
+  .nav-right {display: none;padding: 10px 0;width: 100%;}
+  .nav-right a {display: block;float: left;margin: 0;padding: 5px;width: 33.3%;text-align: center;}
+  .footer-container {display: grid;}
+  .footer-left {width: 100%;text-align: center;}
+  .footer-left a {float: left;padding: 15px 5px;width: 25%;margin: 0;}
+  .footer-right {width: 100%;text-align: center;}
+  .footer-copyright {display: none;}
+}
+@media only screen and (max-width: 375px) {
+}
+@media only screen and (max-width: 320px) {
+}
