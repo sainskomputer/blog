@@ -3,57 +3,64 @@
 <html>
   &lt;head&gt;
     <meta charset="utf-8"/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+    <b:include data='blog' name='all-head-content'/>
     <b:if cond='data:view.isHomepage'>
       <title><data:blog.title/></title>
-      <b:else/>
-      <b:if cond='data:view.isPost'>
-        <title><data:blog.pageName/></title>
-        <b:else/>
-        <title><data:blog.pageName/></title>
-      </b:if>
+    <b:else/>
+    <b:if cond='data:view.isPost'>
+      <title><data:blog.pageName/></title>
+    <b:else/>
+      <title><data:blog.pageName/></title>
     </b:if>
-    <link href='//cdn.sainskomputer.com/css/proxima-nova.css' rel='stylesheet'/>
-    &lt;style type=&quot;text/css&quot;&gt;&lt;!-- /*<b:skin>*/
-      /* *********
+    </b:if>
+    &lt;style type=&quot;text/css&quot;&gt;&lt;!-- /*<b:skin>*//*
       Name        : Sainskomputer Themes 3.3
-      Color       : White
+      Type        : Portal Blogger
       Style       : Minimalist
+      Color       : Black
       Designer    : Diaz Septa
       Published   : 20-jan-2018
       License     : GNU Version 3, 29 June 2007
-      ********** */
-    </b:skin>
+      */</b:skin>
   &lt;/head&gt;
 
-  <style media="screen">
+    <!-- master style -->
+<style media="screen">
 
-  </style>
+</style>
   <b:if cond='data:view.isHomepage'>
-    <style media="screen">
+    <!-- condition style homepage -->
+<style media="screen">
 
-    </style>
+</style>
   </b:if>
   <b:if cond='data:view.isPost'>
-    <style media="screen">
+    <!-- condition style posting -->
+<style media="screen">
 
-    </style>
+</style>
   </b:if>
   <b:if cond='data:view.isPage'>
-    <style media="screen">
+    <!-- condition style page -->
+<style media="screen">
 
-    </style>
+</style>
   </b:if>
   <b:if cond='data:view.isSearch'>
-    <style media="screen">
+    <!-- condition Search -->
+<style media="screen">
 
-    </style>
+</style>
   </b:if>
 
   &lt;body&gt;
+    <!-- start body -->
     <b:section id='main' class='main' maxwidgets="1" showaddelement="false">
       <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' visible='true'></b:widget>
     </b:section>
     <b:section class='sidebar' id='sidebar' preferred='yes'/>
+    <!-- end body -->
   &lt;/body&gt;&lt;!--<head/><body/>--&gt;
   <script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </html>
