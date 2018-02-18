@@ -1,2 +1,6 @@
-# Allow access from all domains for webfonts.
-Header set Access-Control-Allow-Origin "cdn.sainskomputer.com"
+# allowed to load your resource
+<FilesMatch "\.(ttf|otf|eot|woff|woff2)$">
+    <IfModule mod_headers.c>
+        Header set Access-Control-Allow-Origin "https://cdn.sainskomputer.com/"
+    </IfModule>
+</FilesMatch>
