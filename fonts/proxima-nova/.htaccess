@@ -1,6 +1,6 @@
 # allowed to load your resource
-<FilesMatch "\.(ttf|otf|eot|woff|woff2)$">
-    <IfModule mod_headers.c>
-        Header set Access-Control-Allow-Origin "https://cdn.sainskomputer.com/"
-    </IfModule>
-</FilesMatch>
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css|css|js)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>
