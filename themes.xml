@@ -14,9 +14,8 @@
       <title><data:blog.pageName/></title>
     </b:if>
     </b:if>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" />
     &lt;style type=&quot;text/css&quot;&gt;&lt;!-- /*<b:skin>*//*
-      Name        : Sainskomputer Themes 3.2
+      Name        : Sainskomputer Themes 3.3
       Type        : Portal Blogger
       Style       : Minimalist
       Color       : Black
@@ -25,6 +24,7 @@
       License     : GNU Version 3, 29 June 2007
       */</b:skin>
   &lt;/head&gt;
+
     <!-- master style -->
 <style media="screen">
 
@@ -42,11 +42,18 @@
 </style>
   </b:if>
   <b:if cond='data:view.isPage'>
-    <!-- condition style posting -->
+    <!-- condition style page -->
 <style media="screen">
 
 </style>
   </b:if>
+  <b:if cond='data:view.isSearch'>
+    <!-- condition Search -->
+<style media="screen">
+
+</style>
+  </b:if>
+
   &lt;body&gt;
     <!-- start body -->
     <b:section id='main' class='main' maxwidgets="1" showaddelement="false">
