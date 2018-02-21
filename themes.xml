@@ -12,21 +12,11 @@
         <title><data:blog.pageName/></title>
       </b:if>
     </b:if>
-    <link href='//cdn.sainskomputer.com/css/proxima-nova.css' rel='stylesheet'/>
-    &lt;style type=&quot;text/css&quot;&gt;&lt;!-- /*<b:skin>*/
-      /* *********
-      Name        : Sainskomputer Themes 3.3
-      Color       : White
-      Style       : Minimalist
-      Designer    : Diaz Septa
-      Published   : 20-jan-2018
-      License     : GNU Version 3, 29 June 2007
-      ********** */
-    </b:skin>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" />
+    &lt;style type=&quot;text/css&quot;&gt;&lt;!-- /*<b:skin>*//* (c) SK Foundation | GNU Version 3, 29 June 2007 */</b:skin>
   &lt;/head&gt;
 
   <style media="screen">
-
   </style>
   <b:if cond='data:view.isHomepage'>
     <style media="screen">
