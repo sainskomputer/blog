@@ -12,10 +12,8 @@
         <title><data:blog.pageName/></title>
       </b:if>
     </b:if>
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" />
-    &lt;style type=&quot;text/css&quot;&gt;&lt;!-- /*<b:skin>*//* (c) SK Foundation | GNU Version 3, 29 June 2007 */</b:skin>
+    &lt;style type=&quot;text/css&quot;&gt;&lt;!-- /*<b:skin>*/</b:skin>
   &lt;/head&gt;
-
   <style media="screen">
   </style>
   <b:if cond='data:view.isHomepage'>
@@ -38,12 +36,10 @@
 
     </style>
   </b:if>
-
   &lt;body&gt;
     <b:section id='main' class='main' maxwidgets="1" showaddelement="false">
       <b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog' visible='true'></b:widget>
     </b:section>
     <b:section class='sidebar' id='sidebar' preferred='yes'/>
   &lt;/body&gt;&lt;!--<head/><body/>--&gt;
-  <script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </html>
