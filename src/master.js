@@ -1,8 +1,8 @@
 var thumbnail_mode = "yes";
-summary_noimg = 300;
-summary_img = 350;
-img_thumb_height = 200;
-img_thumb_width = 300;
+summary_noimg = 0;
+summary_img = 0;
+img_thumb_width = 330;
+img_thumb_height = 186;
 
 //<![CDATA[
 function removeHtmlTag(strx,chop) {
